@@ -1,5 +1,20 @@
 {
-    "channel_list": [],
-    "api_id":"",
-    "api_hash": ""
+    "api_id": "",
+    "api_hash": "",
+    "last_check_time": 1647908834,
+    "table_name": "telegram_db",
+    "aws_access_key_id": "",
+    "aws_secret_access_key": "",
+    "region_name": "ap-south-1",
+    "channel_list": [
+        1001197297384,
+        1001117184677,
+        1001584715114,
+        1001452778226,
+        1001724572873,
+        1001471369538,
+        1001159455580,
+        1001334459060,
+        1001747195560
+    ]
 }
