@@ -52,7 +52,7 @@ async def listen_for_contract(event: telethon.events.newmessage.NewMessage.Event
     global table
     message = event.raw_text
     contract_links = re.findall(r'(https://www\.dextools\.io.*0x[A-Za-z0-9]{40})', message)
-    # print(contract_links)
+    print(contract_links)
     id_time = int(time.time())
     for link in contract_links:
         chain = link.split('/')[-3]
@@ -66,7 +66,7 @@ async def listen_for_contract(event: telethon.events.newmessage.NewMessage.Event
                         tbl=table)
         check_and_delete(channel_id=str(event.chat_id)[1:], chain=chain)
     contract_links = re.findall(r'(https://dexscreener\.com.*0x[A-Za-z0-9]{40})', message)
-    # print(contract_links)
+    print(contract_links)
     id_time = int(time.time())
     for link in contract_links:
         chain = link.split('/')[-2]
